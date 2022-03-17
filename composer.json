@@ -1,0 +1,20 @@
+{
+    "name": "jacena/php-excel-export",
+    "type": "library",
+    "autoload": {
+        "psr-4": {
+            "Jacena\\PhpExcelMaker\\": "src/"
+        }
+    },
+    "minimum-stability": "dev",
+    "require": {
+	    "phpoffice/phpspreadsheet": "*",
+        "PHPOffice/PHPExcel": "~1.8.2"
+    },
+    "repositories": {
+        "packagist": {
+            "type": "composer",
+            "url": "https://packagist.org"
+        }
+    }
+}
