@@ -1,4 +1,4 @@
-# php_excel_export
+# php-excel-export
 PHPExcel from Array by cli or browser, support php5, php7, php8
 
 通过命令行或者浏览器把PHP数组中的数据导出到excel中。同时支持php低版本和高版本
