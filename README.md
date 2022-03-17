@@ -8,7 +8,8 @@ PHPExcel from Array by cli or browser, support php5, php7, php8
 ### 修改 项目中 `composer.json` 文件，如下: 重点是加上 `require` 和 `repositories`
 > vi composer.json
 > 
-```{
+```
+{
     "name": "test",
     "type": "library",
     
