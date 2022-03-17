@@ -16,8 +16,9 @@ PHPExcel from Array by cli or browser, support php5, php7, php8
 
 > vi test.php
 
-> <?php
-
+> 
+```
+<?php
 namespace test;
 
 require_once("vendor/autoload.php"); // 如果用的框架，肯定已经自动加载了。可以注释
@@ -26,6 +27,7 @@ use Jacena\PhpExcelMaker\PHPExcelMaker;
 
 $keys = $title = [];
 
+
 $data = [
     ['aaa'=>'dkdk', 'bbb'=>'ddkdkd', 'ccc'=>'dkdkfd'],
     ['aaa'=>'dkdk', 'bbb'=>'ddkdkd', 'ccc'=>'dkdkfd'],
@@ -33,6 +35,7 @@ $data = [
     ['aaa'=>'dkdk', 'bbb'=>'ddkdkd', 'ccc'=>'dkdkfd'],
     ['aaa'=>'dkdk', 'bbb'=>'ddkdkd', 'ccc'=>'dkdkfd'],
 ];
+
 
 $title = [
     'aaa' => '姓名',
@@ -54,6 +57,8 @@ if (PHP_SAPI == 'cli') {
     // var_dump($excel->getPHPVersion());exit;
     $excel->exportExcel($keys, $title, $data, 'xxxx', false); // 数组名和文件名一致
 }
+
+```
 
 
 
