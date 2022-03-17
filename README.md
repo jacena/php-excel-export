@@ -47,33 +47,29 @@ use Jacena\PhpExcelMaker\PHPExcelMaker;
 
 $keys = $title = [];
 
-
 $data = [
-    ['aaa'=>'dkdk', 'bbb'=>'ddkdkd', 'ccc'=>'dkdkfd'],
-    ['aaa'=>'dkdk', 'bbb'=>'ddkdkd', 'ccc'=>'dkdkfd'],
-    ['aaa'=>'dkdk', 'bbb'=>'ddkdkd', 'ccc'=>'dkdkfd'],
-    ['aaa'=>'dkdk', 'bbb'=>'ddkdkd', 'ccc'=>'dkdkfd'],
-    ['aaa'=>'dkdk', 'bbb'=>'ddkdkd', 'ccc'=>'dkdkfd'],
+    ['user_name'=>'jack', 'age'=>'20', 'sex'=>'1'],
+    ['user_name'=>'hack', 'age'=>'30', 'sex'=>'2'],
+    ['user_name'=>'jack', 'age'=>'22', 'sex'=>'1'],
+    ['user_name'=>'jack', 'age'=>'23', 'sex'=>'2'],
+    ['user_name'=>'jack', 'age'=>'32', 'sex'=>'2'],
+    ['user_name'=>'jack', 'age'=>'40', 'sex'=>'2'],
+    ['user_name'=>'jack', 'age'=>'60', 'sex'=>'1'],
 ];
 
-
 $title = [
-    'aaa' => '姓名',
-    'bbb' => '年龄',
-    'ccc' => '性别',
+    'user_name' => '姓名',
+    'age' => '年龄',
+    'sex' => '性别',
 ];
 
 $excel = new PHPExcelMaker();
 
-
 if (PHP_SAPI == 'cli') {
-    
     // var_dump($excel->getPHPVersion());exit;
     $excel->exportExcel($keys, $title, $data, 'xxx'); // 数组名和文件名一致
     exit;
-
 }else {
-    
     // var_dump($excel->getPHPVersion());exit;
     $excel->exportExcel($keys, $title, $data, 'xxxx', false); // 数组名和文件名一致
 }
