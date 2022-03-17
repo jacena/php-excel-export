@@ -5,6 +5,25 @@ PHPExcel from Array by cli or browser, support php5, php7, php8
 
 ## Use example: 使用示例
 
+### 修改 项目中 `composer.json` 文件，如下: 重点是加上 `require` 和 `repositories`
+> vi composer.json
+> 
+```{
+    "name": "test",
+    "type": "library",
+    
+    "minimum-stability": "dev",
+    "require": {
+        "jacena/php-excel-export": "dev-master"
+    },
+    "repositories": {
+        "jacena/php-excel-export": {
+            "type": "git",
+            "url": "https://github.com/jacena/php-excel-export.git"
+        }
+    }
+}
+```
 
 ### 必须加上  `--ignore-platform-reqs` 否则有些有些包装不上
 - 安装 install 
