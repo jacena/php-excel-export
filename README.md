@@ -18,6 +18,10 @@ PHPExcel from Array by cli or browser, support php5, php7, php8
         "jacena/php-excel-export": "dev-master"
     },
     "repositories": {
+        "packagist": {
+            "type": "composer",
+            "url": "https://packagist.org"
+        },
         "jacena/php-excel-export": {
             "type": "git",
             "url": "https://github.com/jacena/php-excel-export.git"
