@@ -28,7 +28,6 @@ PHPExcel from Array by cli or browser, support php5, php7, php8
     }
 }
 ```
-
 ### 必须加上  `--ignore-platform-reqs` 否则有些有些包装不上
 - 安装 install 
     > composer install --ignore-platform-reqs -vvv
