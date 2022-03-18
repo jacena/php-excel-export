@@ -12,7 +12,6 @@ PHPExcel from Array by cli or browser, support php5, php7, php8
 {
     "name": "test",
     "type": "library",
-    
     "minimum-stability": "dev",
     "require": {
         "jacena/php-excel-export": "dev-master"
