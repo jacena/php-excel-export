@@ -99,8 +99,8 @@ class PHPExcelMaker8
             $objPHPExcel->getActiveSheet()->setTitle($filename);
             $objPHPExcel->setActiveSheetIndex(0);
             // Redirect output to a client’s web browser (Excel5)
-            $filename = $filename ? $filename . '.xlsx' : date("Ymd", time()) . '.xlsx';
-            $newFileName = date('Y-m-d-H:i:s') . '_' . $filename;
+            $filename = $filename ? $filename : date("Ymd", time());
+            $newFileName = $filename . '_' . date('Y-m-d-H:i:s') . '.xlsx';
             if ($returnFile) {
                 $dirPath = $output; //注意要设置为绝对路径
                 $objWriter = IOFactory::createWriter($objPHPExcel, 'Xlsx');
